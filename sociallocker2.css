@@ -1,0 +1,991 @@
+/**
+* Basic styles
+*/
+
+/* locker text */
+.jo-sociallocker .jo-sociallocker-strong,
+.jo-sociallocker .jo-sociallocker-message, 
+.jo-sociallocker .jo-sociallocker-timer,
+.jo-sociallocker .jo-sociallocker-error-title,
+.jo-sociallocker-error-text {
+    font: normal normal 400 13px/23px "Arial", "Helvetica", sans-serif;;
+    color: #111;
+}
+
+.jo-sociallocker iframe {
+   margin: 0px !important;
+}
+
+/* locker containers */
+.jo-sociallocker, 
+.jo-sociallocker .jo-sociallocker-outer-wrap, 
+.jo-sociallocker .jo-sociallocker-inner-wrap {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Error that is rised when the locker is setup incorrect. */
+.jo-sociallocker-error {
+    display: block !important;
+    padding: 20px !important;
+    font: normal normal 400 12px/18px "PT Sans", sans-serif !important;
+    background-color: #ffebe8 !important;
+    border: 1px solid #dd3c10 !important;
+    text-align: left !important;
+    -webkit-text-shadow: none !important;
+    -moz-text-shadow: none !important;
+    text-shadow: none !important;
+    margin: 20px 0 !important;
+    color: #000 !important;
+}
+
+.jo-sociallocker {
+    position: relative !important;
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 650px;
+}
+.jo-sociallocker p {
+    margin: 0px;
+}
+
+/**
+* Locker Messages
+*/
+
+.jo-sociallocker .jo-sociallocker-text {
+    text-align: center;
+}
+.jo-sociallocker-text .jo-sociallocker-strong {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/**
+* Locker Errors
+*/
+
+.jo-sociallocker-state-error .onp-social-button {
+    display: none;
+}
+.jo-sociallocker .jo-sociallocker-error-body {
+    text-align: center;
+}
+.jo-sociallocker .jo-sociallocker-error-title, 
+.jo-sociallocker .jo-sociallocker-error-text {
+    text-shadow: none;
+}
+.jo-sociallocker .jo-sociallocker-error-title {
+    text-align: center;
+    display: inline-block;
+    background-color: #cc0000;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 4px 10px;
+    color: #fff;
+    vertical-align: top;
+}
+.jo-sociallocker .jo-sociallocker-error-title:hover {
+    background-color: #ee0000;
+}
+.jo-sociallocker .jo-sociallocker-error-text {
+    background: #c00;
+    color: #fff;
+    padding: 10px;
+    margin-top: 15px;
+}
+.jo-sociallocker .jo-sociallocker-error-body .jo-sociallocker-error-text {
+    display: none;
+}
+
+/**
+* Locker Buttons
+*/
+
+.jo-sociallocker-buttons {
+    text-align: center;
+}
+.jo-sociallocker-text + .jo-sociallocker-buttons {
+    margin-top: 5px;
+}
+.jo-sociallocker-button-inner-wrap {
+    height: 40px;
+    min-width: 120px;
+    padding: 10px;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;
+}
+.jo-sociallocker-state-loading .jo-sociallocker-button-inner-wrap { 
+    background: url('http://1.bp.blogspot.com/-rmBq4v6cP4w/U5qZZdqHAfI/AAAAAAAAARo/UC6aC0QqIU8/s1600/button-loader-f2f2f2.gif') 50% 50% no-repeat;
+}
+
+.onp-social-button {
+    min-width: 104px;
+}
+/* facebook buttons, google buttons and tweet button always has the fixed size */
+.onp-facebook-button, 
+.onp-google-button, 
+.onp-twitter-tweet {
+    width: 104px;
+}
+.jo-sociallocker-button-overlay {
+    width: 100%;
+    border-bottom: none;
+}
+
+.jo-sociallocker-button-inner-wrap {
+    position: relative;
+}
+.jo-sociallocker-button {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.jo-sociallocker.jo-sociallocker-no-counters .jo-sociallocker-button {
+    text-align: center;
+}
+.jo-sociallocker-button-overlay {
+    position: absolute;
+    top: 0px; left: 0px;
+}
+.jo-sociallocker-button {
+    margin: 10px 5px 0 5px;
+    background-color: #f2f2f2;
+}
+.onp-social-button {
+    overflow: hidden;
+    padding: 1px;
+    position: relative;
+    top: -1px;
+}
+
+.jo-sociallocker-opera .fb-like {
+    position: relative;
+    top: -2px;
+}
+.jo-sociallocker-button-facebook-like .fb-like span {
+    vertical-align: top !important;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* facebook share button */
+.onp-facebook-share-button {
+    line-height: 1%;
+}
+.jo-sociallocker-vertical .onp-facebook-share-button span {
+    top: 1px;
+}
+.onp-facebook-share-button-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,255,255,0); 
+    cursor: pointer;
+    z-index: 20;
+}
+.onp-facebook-share-button-overlay:hover {
+    background-color: rgba(255,255,255,0.1);  
+}
+
+/* remove the popup comment box */
+.jo-sociallocker-button .fb-like span,
+.jo-sociallocker-button .fb-like iframe {
+    height: 22px;
+}
+.jo-sociallocker-button .fb-like span {
+    overflow: hidden;
+    padding: 0 1px;
+}
+.jo-sociallocker-button-unsupported {
+    font-size: 10px;
+    text-align: center;
+    line-height: 13px;
+}
+/**
+* Overlay for buttons
+*/
+
+.jo-sociallocker-button-overlay * {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.jo-sociallocker-overlay-front,
+.jo-sociallocker-overlay-back {
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    -moz-box-sizing: content-box;  
+    box-sizing: content-box;
+}
+
+/**
+* Helper tools (timer, close icon)
+*/
+
+.jo-sociallocker .jo-sociallocker-cross {
+    background: url('http://3.bp.blogspot.com/-u2TLiDrfJYU/U5qZaUeRbyI/AAAAAAAAAR8/DUTwy-FZ1SE/s1600/close.png') 50% 50% no-repeat;
+    width: 16px;
+    height: 16px;
+    opacity: 0.1;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=10);
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 2;
+}
+.jo-sociallocker:hover .jo-sociallocker-cross {
+    opacity: 0.2;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}
+.jo-sociallocker .jo-sociallocker-cross:hover {
+    opacity: 0.8;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+.jo-sociallocker .jo-sociallocker-timer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 10;
+}
+.jo-sociallocker .jo-sociallocker-timer,
+.jo-sociallocker .jo-sociallocker-timer * {
+    font: normal normal 400 12px/12px sans-serif;
+    text-transform: lowercase;
+}
+.jo-sociallocker .jo-sociallocker-timer {
+    color: #000;
+    margin-left: 5px;
+}
+.jo-sociallocker .jo-sociallocker-timer-counter {
+    font-weight: bold;
+}
+.onp-google-button {
+    position: relative;
+}
+
+/**
+* Base styles of the flip effect
+*/
+.jo-sociallocker-flip .jo-sociallocker-button-inner-wrap
+{
+    perspective: 500px;
+    perspective-origin: 50% 0;
+    -webkit-perspective: 500px;
+    -webkit-perspective-origin: 50% 0;
+    -moz-perspective: 500px;
+    -moz-perspective-origin: 50% 0;
+}
+.jo-sociallocker-flip .jo-sociallocker-button-overlay {
+    display: block;
+
+    transform-origin: bottom;
+    transform-style: preserve-3d;		
+    transition: transform .3s ease;
+    transform: translate(0);
+
+    -webkit-transform-origin: bottom;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .3s ease;
+    -webkit-transform: translateY(0) rotateX(0);
+
+    -moz-transform-origin: bottom;
+    -moz-transform-style: preserve-3d;		
+    -moz-transition: -moz-transform .3s ease;
+    -moz-transform: translate(0);
+    
+    text-decoration: none !important;
+}
+.jo-sociallocker-flip .jo-sociallocker-overlay-back 
+{
+    transform: rotateX(-180deg) translateZ(4px);
+    -webkit-transform: rotateX(-180deg) translateZ(4px);
+    -moz-transform: rotateX(-180deg) translateZ(4px);
+}
+.jo-sociallocker-flip .jo-sociallocker-overlay-header {
+    height: 4px;
+    
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: top;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform-origin: top;
+    -moz-transform: rotateX(-90deg);
+}
+.jo-sociallocker-touch .jo-sociallocker-button-overlay {
+    cursor: pointer;
+}
+.jo-sociallocker-no-touch .jo-sociallocker-flip:hover .jo-sociallocker-button-overlay,
+.jo-sociallocker-flip-hover .jo-sociallocker-button-overlay
+{
+     display: block !important;
+    transform: translateY(4px) rotateX(-105deg);
+    -webkit-transform: translateY(4px) rotateX(-105deg);
+    -moz-transform: translateY(4px) rotateX(-105deg);
+}
+.jo-sociallocker-flip:hover .jo-sociallocker-overlay-back {
+    border-top: 2px solid #eee;
+}
+.jo-sociallocker .jo-sociallocker-state-error.jo-sociallocker-button .jo-sociallocker-overlay-text {
+    text-decoration: line-through;
+    color: #fff;
+    text-shadow: none;
+}
+
+/**
+* Secrets style
+*
+* Credits:
+* http://dribbble.com/shots/457259-Twitter-Button-Concept
+* http://dribbble.com/shots/363710-Fb-Btn-Concept
+* http://dribbble.com/shots/363401-Facebook-button-concept
+* http://dribbble.com/shots/777465-Social-Sharing-Buttons
+* http://dribbble.com/shots/684822-Free-Social-Button-PSD
+*/
+
+.jo-sociallocker-secrets .fb-like span,
+.jo-sociallocker-secrets .fb-like iframe {
+    width: 118px !important;
+}
+.jo-sociallocker-secrets {
+    padding: 20px;
+    margin: 10px auto 15px auto;
+    border: 0px;
+
+    background-color: transparent;
+}
+.jo-sociallocker-secrets .jo-sociallocker-inner-wrap {
+    border: 3px solid #fefefe;
+    background-color: #f7f7f7;
+    padding: 30px;
+}
+.jo-sociallocker-secrets .jo-sociallocker-outer-wrap {
+    border: 1px solid #e6e6e6;
+    
+    -moz-box-shadow: 0px 0px 40px rgba(0,0,0,0.08); 
+    -webkit-box-shadow: 0px 0px 40px rgba(0,0,0,0.08);     
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.08);  
+}
+.jo-sociallocker-secrets .jo-sociallocker-text,
+.jo-sociallocker-secrets  .jo-sociallocker-timer, 
+.jo-sociallocker-secrets .jo-sociallocker-timer * {
+    -webkit-text-shadow: 1px 1px 2px #fff;
+    -moz-text-shadow: 1px 1px 2px #fff;
+    text-shadow: 1px 1px 2px #fff;  
+}
+.jo-sociallocker-secrets .jo-sociallocker-text .jo-sociallocker-strong:before,
+.jo-sociallocker-secrets .jo-sociallocker-text .jo-sociallocker-strong:after 
+{
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0 9px;
+    background: url('http://3.bp.blogspot.com/-zh68d9Qv_cQ/U5qZboEospI/AAAAAAAAASw/fX_SFK1bdno/s1600/lock-icon.png') 0px 2px no-repeat;
+}
+@media screen and (max-width: 500px) 
+{
+    .jo-sociallocker-secrets .jo-sociallocker-text .jo-sociallocker-strong:before,
+    .jo-sociallocker-secrets .jo-sociallocker-text .jo-sociallocker-strong:after 
+    {
+        display: none;
+    }
+}
+.jo-sociallocker-secrets .jo-sociallocker-text .jo-sociallocker-strong:after {
+    margin-left: 10px;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button {
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.05);
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-inner-wrap, 
+.jo-sociallocker-secrets .jo-sociallocker-button-overlay {
+    height: 34px;
+    min-width: 118px;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-inner-wrap{
+    padding: 7px;
+    -moz-box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+.jo-sociallocker-secrets .jo-sociallocker-button .jo-sociallocker-overlay-front {
+    background: #eaeaea;
+    background-image: url('http://1.bp.blogspot.com/-XeR66KwhG5I/U5qZbx2MtDI/AAAAAAAAASU/MPyjCwtGZ2I/s1600/secrets-bg.png');
+    background-repeat: repeat-x;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,.25);
+    -moz-box-shadow: inset 0 2px 0 rgba(255,255,255,.25);
+    -webkit-box-shadow: inset 0 2px 0 rgba(255,255,255,.25);
+    position: relative;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button .jo-sociallocker-overlay-icon {
+    height: 34px;
+    width: 44px;
+    background: url('http://1.bp.blogspot.com/-0XAzn5_MtDA/U5qZcIegt6I/AAAAAAAAASY/MkLnSkKpoz0/s1600/social-icons.png') 0 50% no-repeat;
+    position: absolute;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button .jo-sociallocker-overlay-line {
+    position: absolute;
+    left: 41px;
+    top: 7px;
+    height: 21px;
+    width: 0px;
+    border-left: 1px solid rgba(0,0,0,0.11);
+    border-right: 1px solid rgba(255,255,255,0.16); 
+}
+.jo-sociallocker-secrets .jo-sociallocker-button .jo-sociallocker-overlay-text {
+    font-size: 14px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+    position: static;
+    padding-left: 42px;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.15);
+}
+.jo-sociallocker-secrets .jo-sociallocker-button .jo-sociallocker-overlay-back {
+    background: #eaeaea;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button .jo-sociallocker-overlay-header {
+    background: #eaeaea;
+}
+
+.jo-sociallocker-secrets .jo-sociallocker-button-twitter .jo-sociallocker-overlay-front {    
+    background: rgb(0,191,238); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYmZlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMGExZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(0,191,238,1) 0%, rgba(0,161,227,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,191,238,1)), color-stop(100%,rgba(0,161,227,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,191,238,1) 0%,rgba(0,161,227,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,191,238,1) 0%,rgba(0,161,227,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,191,238,1) 0%,rgba(0,161,227,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,191,238,1) 0%,rgba(0,161,227,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bfee', endColorstr='#00a1e3',GradientType=0 ); /* IE6-8 */
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-twitter .jo-sociallocker-overlay-icon {
+    background-position: -132px 8px;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-twitter .jo-sociallocker-overlay-back {
+    background: #24b1e5;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-twitter .jo-sociallocker-overlay-header {
+    background: #368acd;
+}
+
+.jo-sociallocker-secrets .jo-sociallocker-button-facebook .jo-sociallocker-overlay-front {    
+    background: rgb(85,129,188); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1ODFiYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iIzI1NWI5ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(85,129,188,1) 0%, rgba(37,91,157,1) 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(85,129,188,1)), color-stop(99%,rgba(37,91,157,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(85,129,188,1) 0%,rgba(37,91,157,1) 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(85,129,188,1) 0%,rgba(37,91,157,1) 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(85,129,188,1) 0%,rgba(37,91,157,1) 99%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(85,129,188,1) 0%,rgba(37,91,157,1) 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5581bc', endColorstr='#255b9d',GradientType=0 ); /* IE6-8 */
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-facebook .jo-sociallocker-overlay-icon {
+    background-position: 15px 9px;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-facebook .jo-sociallocker-overlay-back {
+    background: #46629e; 
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-facebook .jo-sociallocker-overlay-header {
+    background-color: #314775;
+}
+
+.jo-sociallocker-secrets .jo-sociallocker-button-google .jo-sociallocker-overlay-front {   
+    background: #5c5c5c; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVjNWM1YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNTA5MGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #5c5c5c 0%, #15090d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5c5c5c), color-stop(100%,#15090d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #5c5c5c 0%,#15090d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #5c5c5c 0%,#15090d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #5c5c5c 0%,#15090d 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #5c5c5c 0%,#15090d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c5c5c', endColorstr='#15090d',GradientType=0 ); /* IE6-8 */
+
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-google .jo-sociallocker-overlay-icon {
+    background-position: -18px 9px;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-google .jo-sociallocker-overlay-back {
+    background: #494647; 
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-google .jo-sociallocker-overlay-header {
+    background-color: #111111;
+}
+
+.jo-sociallocker-secrets .jo-sociallocker-button-linkedin .jo-sociallocker-overlay-front {    
+    background: #0076a3; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzZhMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDU1NzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #0076a3 0%, #005575 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0076a3), color-stop(100%,#005575)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #0076a3 0%,#005575 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #0076a3 0%,#005575 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #0076a3 0%,#005575 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #0076a3 0%,#005575 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076a3', endColorstr='#005575',GradientType=0 ); /* IE6-8 */
+
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-linkedin .jo-sociallocker-overlay-icon {
+    background-position: -58px 8px;
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-linkedin .jo-sociallocker-overlay-back {
+    background: #286b8d; 
+}
+.jo-sociallocker-secrets .jo-sociallocker-button-linkedin .jo-sociallocker-overlay-header {
+    background-color: #19465d;
+}
+.jo-sociallocker-secrets .jo-sociallocker-cross {
+    top: 28px;
+    right: 28px;
+}
+.jo-sociallocker-secrets .jo-sociallocker-timer {
+    right: 30px;
+    bottom: 28px;
+    color: #777;
+}
+.jo-sociallocker-secrets .jo-sociallocker-state-loading .jo-sociallocker-button-inner-wrap { 
+    background-image: url('http://2.bp.blogspot.com/-9OIqdswfNJY/U5qZZd6U3aI/AAAAAAAAARk/tDdmAeeC_Cc/s1600/button-loader-eaeaea.gif');
+}
+
+/**
+* Dandyish style
+*/
+
+.jo-sociallocker-dandyish {
+    padding: 7px;
+    background: url('http://2.bp.blogspot.com/-Ew8vy6sdtDA/U5qZa2zEPNI/AAAAAAAAASE/2Qnmos4jbkc/s1600/dandysh-border.png');
+    border-radius: 12px;
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.jo-sociallocker-dandyish .jo-sociallocker-outer-wrap {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-inner-wrap {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: f8f8f8;
+    background: linear-gradient(top, #f9f9f9, #F5F5F5);
+    background: -o-linear-gradient(top, #f9f9f9, #F5F5F5);
+    background: -moz-linear-gradient(top, #f9f9f9, #F5F5F5);
+    background: -webkit-linear-gradient(top, #f9f9f9, #F5F5F5);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#F5F5F5',GradientType=0 );
+    background: -ms-linear-gradient(top, #FFFFFF, #F5F5F5);   
+    -moz-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.20);
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.20);
+}
+.jo-sociallocker-dandyish .jo-sociallocker-text {
+    padding: 10px 10px 0 10px;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-text,
+.jo-sociallocker-dandyish  .jo-sociallocker-timer, 
+.jo-sociallocker-dandyish .jo-sociallocker-timer * {
+    -webkit-text-shadow: 1px 1px 2px #fff;
+    -moz-text-shadow: 1px 1px 2px #fff;
+    text-shadow: 1px 1px 2px #fff;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-text .jo-sociallocker-strong:before,
+.jo-sociallocker-dandyish .jo-sociallocker-text .jo-sociallocker-strong:after {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0 9px;
+    background: url('http://3.bp.blogspot.com/-zh68d9Qv_cQ/U5qZboEospI/AAAAAAAAASw/fX_SFK1bdno/s1600/lock-icon.png') 0px 2px no-repeat;
+}
+@media screen and (max-width: 500px) 
+{
+    .jo-sociallocker-dandyish .jo-sociallocker-text .jo-sociallocker-strong:before,
+    .jo-sociallocker-dandyish .jo-sociallocker-text .jo-sociallocker-strong:after 
+    {
+        display: none;
+    }
+}
+.jo-sociallocker-dandyish .jo-sociallocker-text .jo-sociallocker-strong:after {
+    margin-left: 10px;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-buttons {
+    margin: 0px;
+    padding: 5px;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-button {
+    border-radius: 7px;
+    background-color: rgba(255,255,255, 1);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+.jo-sociallocker-dandyish .jo-sociallocker-button .fb-like span,
+.jo-sociallocker-dandyish .jo-sociallocker-button .fb-like iframe {
+    height: 61px;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-button {
+    margin: 14px 7px 0 7px;
+    width: 85px;
+}
+.jo-sociallocker.jo-sociallocker-dandyish .onp-social-button {
+    min-width: 0px;
+    width: auto;
+}
+
+.jo-sociallocker-dandyish .onp-linkedin-button {
+    position: relative;
+}
+.jo-sociallocker-dandyish .onp-google-button {
+    position: relative;
+    top: 2px;
+}
+.jo-sociallocker-dandyish .onp-facebook-button, 
+.jo-sociallocker-dandyish .onp-google-button, 
+.jo-sociallocker-dandyish .onp-twitter-tweet {
+    width: auto;
+}
+.jo-sociallocker-dandyish .fb-like {
+    position: top;
+    top: 1px;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-button-inner-wrap {
+    min-width: 85px;
+    height: 84px;
+    padding: 10px;
+    text-align: center;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-cross {
+    top: 20px;
+    right: 20px;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-timer {
+    right: 20px;
+    bottom: 20px;
+}
+.jo-sociallocker-dandyish .jo-sociallocker-state-loading .jo-sociallocker-button-inner-wrap { 
+    background-image: url('http://3.bp.blogspot.com/-kjieP0CoGsc/U5qZZrdYjRI/AAAAAAAAASA/UE8imLPctXM/s1600/button-loader-ffffff.gif');
+}
+
+/**
+* Glass style
+*/
+.jo-sociallocker-glass {
+    padding: 15px;
+    border: 0px;
+    
+    -moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 1px 1px rgba(0, 0, 0, 0.1);    
+    -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+    
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
+    text-shadow: 0px 1px 1px #fff;
+    
+    background: rgba(0,0,0,0.03);
+}
+.jo-sociallocker-glass .jo-sociallocker-outer-wrap {
+
+    padding: 30px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    
+    -webkit-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(255, 255, 255, 0.7);   
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    
+    background: rgb(247,247,247);
+
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(240,240,240,0.5) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(240,240,240,0.5)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(240,240,240,0.5) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(240,240,240,0.5) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(240,240,240,0.5) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.5) 0%,rgba(240,240,240,0.5) 100%);
+}
+.jo-sociallocker-glass .jo-sociallocker-text .jo-sociallocker-strong:before,
+.jo-sociallocker-glass .jo-sociallocker-text .jo-sociallocker-strong:after {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0 9px;
+    background: url('http://3.bp.blogspot.com/-zh68d9Qv_cQ/U5qZboEospI/AAAAAAAAASw/fX_SFK1bdno/s1600/lock-icon.png') 0px 2px no-repeat;
+}
+@media screen and (max-width: 500px) 
+{
+    .jo-sociallocker-glass .jo-sociallocker-text .jo-sociallocker-strong:before,
+    .jo-sociallocker-glass .jo-sociallocker-text .jo-sociallocker-strong:after 
+    {
+        display: none;
+    }
+}
+.jo-sociallocker-glass .jo-sociallocker-button {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    
+    -webkit-box-shadow: inset 0px 0px 4px rgba(0,0,0,0.12), 0px 1px 1px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: inset 0px 0px 4px rgba(0,0,0,0.12), 0px 1px 1px rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.12), 0px 1px 1px rgba(255, 255, 255, 0.7);
+}
+.jo-sociallocker-glass .jo-sociallocker-cross {
+    top: 20px;
+    right: 20px;
+}
+.jo-sociallocker-glass .jo-sociallocker-timer {
+    right: 23px;
+    bottom: 21px;
+}
+
+
+/**
+* Flat style
+*/
+.jo-sociallocker-flat .fb-like span,
+.jo-sociallocker-flat .fb-like iframe {
+    width: 118px !important;
+}
+.jo-sociallocker-flat {
+    padding: 0px;
+    background-color: transparent;
+}
+.jo-sociallocker-flat .jo-sociallocker-inner-wrap {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+.jo-sociallocker-flat .jo-sociallocker-outer-wrap {
+    border-bottom: 4px solid #f1f1f1;
+}
+.jo-sociallocker-flat .jo-sociallocker-inner-wrap,
+.jo-sociallocker-flat .jo-sociallocker-outer-wrap {
+    border-radius: 5px;
+}
+.jo-sociallocker-flat .jo-sociallocker-text .jo-sociallocker-strong:before,
+.jo-sociallocker-flat .jo-sociallocker-text .jo-sociallocker-strong:after 
+{
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0 9px;
+    background: url('http://3.bp.blogspot.com/-zh68d9Qv_cQ/U5qZboEospI/AAAAAAAAASw/fX_SFK1bdno/s1600/lock-icon.png') 0px 2px no-repeat;
+}
+@media screen and (max-width: 500px) 
+{
+    .jo-sociallocker-flat .jo-sociallocker-text .jo-sociallocker-strong:before,
+    .jo-sociallocker-flat .jo-sociallocker-text .jo-sociallocker-strong:after 
+    {
+        display: none;
+    }
+}
+.jo-sociallocker-flat .jo-sociallocker-text .jo-sociallocker-strong:after {
+    margin-left: 10px;
+}
+.jo-sociallocker-flat .jo-sociallocker-button {
+    background: rgba(0, 0, 0, 0.03);
+}
+.jo-sociallocker-flat .jo-sociallocker-button-inner-wrap {
+    padding: 7px 10px 10px 10px;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-inner-wrap, 
+.jo-sociallocker-flat .jo-sociallocker-button-overlay {
+    height: 34px;
+    min-width: 118px;
+}
+.jo-sociallocker-flat .jo-sociallocker-button .jo-sociallocker-overlay-front {
+    background: #eaeaea;
+    border-bottom: 3px solid #dadada;
+}
+.jo-sociallocker-flat .jo-sociallocker-button .jo-sociallocker-overlay-front,
+.jo-sociallocker-flat .jo-sociallocker-button .jo-sociallocker-overlay-back {
+    border-radius: 3px;
+}
+
+.jo-sociallocker-flat .jo-sociallocker-button .jo-sociallocker-overlay-icon {
+    height: 34px;
+    width: 44px;
+    background-image: url('http://1.bp.blogspot.com/-0XAzn5_MtDA/U5qZcIegt6I/AAAAAAAAASY/MkLnSkKpoz0/s1600/social-icons.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    position: absolute;
+}
+.jo-sociallocker-flat .jo-sociallocker-button .jo-sociallocker-overlay-text {
+    font-size: 14px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+    position: static;
+    padding-left: 42px;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.15);
+}
+
+.jo-sociallocker-flat .jo-sociallocker-button-twitter .jo-sociallocker-overlay-front {
+    background: #4086cc;
+    border-bottom-color: #13579e;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-twitter .jo-sociallocker-overlay-icon {
+    background-position: -132px 8px;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-twitter .jo-sociallocker-overlay-back {
+    background: #4086cc;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-twitter .jo-sociallocker-overlay-header {
+    background: #13579e;
+}
+
+.jo-sociallocker-flat .jo-sociallocker-button-facebook .jo-sociallocker-overlay-front {
+    background: #3c5a9a;
+    border-bottom-color: #082b6f;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-facebook .jo-sociallocker-overlay-icon {
+    background-position: 15px 9px;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-facebook .jo-sociallocker-overlay-back {
+    background: #3c5a9a;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-facebook .jo-sociallocker-overlay-header {
+    background: #082b6f;
+}
+
+.jo-sociallocker-flat .jo-sociallocker-button-google .jo-sociallocker-overlay-front {
+    background: #ca4639;
+    border-bottom-color: #a52316;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-google .jo-sociallocker-overlay-icon {
+    background-position: -18px 9px;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-google .jo-sociallocker-overlay-back {
+    background: #ca4639;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-google .jo-sociallocker-overlay-header {
+    background: #a52316;
+}
+
+.jo-sociallocker-flat .jo-sociallocker-button-linkedin .jo-sociallocker-overlay-front {
+    background-color: #286b8d;
+    border-bottom-color: #4a6887;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-linkedin .jo-sociallocker-overlay-icon {
+    background-position: -58px 7px;
+}
+.jo-sociallocker-flat .jo-sociallocker-button-linkedin .jo-sociallocker-overlay-back {
+    background: #286b8d; 
+}
+.jo-sociallocker-flat .jo-sociallocker-button-linkedin .jo-sociallocker-overlay-header {
+    background-color: #19465d;
+}
+.jo-sociallocker-flat .jo-sociallocker-cross {
+    top: 8px;
+    right: 8px;
+}
+.jo-sociallocker-flat .jo-sociallocker-timer {
+    right: 10px;
+    bottom: 8px;
+    color: #777;
+}
+
+/**
+* Like Button Widget styles
+*/
+
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-like-es_ES,
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-share-es_ES {
+    width: 114px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-like-ru_RU,
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-share-ru_RU {
+    width: 124px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-like-pl_PL,
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-share-pl_PL {
+    width: 120px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-like-de_DE,
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-share-de_DE {
+    width: 120px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-has-counters .onp-facebook-share-pt_BR {
+    width: 130px !important;
+}
+
+/* See #SLJQ-14 */
+.jo-sociallocker .onp-facebook-like-count-none .fb_iframe_widget {
+    display: inline-block !important;
+}
+.jo-sociallocker .onp-facebook-like-count-none .fb-like {
+    overflow: hidden;
+    width: 50px !important;
+}
+
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .fb-share-button {
+    overflow: hidden;
+    width: 60px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-like-es_ES .fb-like {
+    width: 78px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-share-es_ES .fb-share-button {
+    width: 81px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-like-pt_PT .fb-like {
+    width: 59px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-share-pt_PT .fb-share-button {
+    width: 71px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-like-fr_FR .fb-like {
+    width: 63px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-share-fr_FR .fb-share-button {
+    width: 73px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-like-ru_RU .fb-like {
+    width: 81px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-share-ru_RU .fb-share-button {
+    width: 91px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-like-fi_FI .fb-like {
+    width: 68px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-share-fi_FI .fb-share-button {
+    width: 43px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-like-pl_PL .fb-like {
+    width: 77px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-share-pl_PL .fb-share-button {
+    width: 87px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-like-de_DE .fb-like {
+    width: 85px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-like-pt_BR .fb-like {
+    width: 59px !important;
+}
+.jo-sociallocker-horizontal.jo-sociallocker-no-counters .onp-facebook-share-pt_BR .fb-share-button {
+    width: 98px !important;
+}
